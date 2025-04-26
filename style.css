@@ -1,0 +1,110 @@
+
+body{
+    margin: 0px;
+}
+
+.main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+    /* Resume button */
+.resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 2rem; */
+}
+.resume-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #D03D56;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #3730a3;
+    transform: scale(1.05);
+  }
+  
+.navbar ul{
+    list-style-type: none;
+    background-color: #D03D56;
+    /* color: #8B0000; */
+    padding: 0px;
+    margin: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+} 
+
+.navbar a:hover {
+    background-color: black;
+}
+
+.navbar li{
+    float: left;
+}
+/* 
+.navbar ul{
+    display: block;
+} */
+
+
+.navbar a.active {
+    background-color: white;
+}
+
+body{
+    background: white;
+    /* background: #1a1a19; */
+}
+
+
+h1{
+    margin: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #D03D56;
+    text-align: center;
+}
+
+h2{
+    /*color: rgb(0,155,255)*/
+    color: #d84b4b;
+    text-align: center;
+    
+}
+
+h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /*color: rgb(145,11,15)*/
+    color: #D03D56;
+    text-align: center;
+}
+
+section{
+    color:black;
+}
+
+  
+.contact a{
+    color: red;
+}
