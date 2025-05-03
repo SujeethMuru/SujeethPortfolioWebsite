@@ -44,7 +44,6 @@
 /* === Active Link Style === */
 .navbar a.active {
     background-color: white;
-    color: black;
 }
 
 body{
@@ -117,10 +116,63 @@ section{
     color:black;
 }
 
+/* === Contact Section === */
+.contact {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* === Contact Form === */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit; 
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #D03D56;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #3730a3;
+}
+
 .contact a{
     color: red;
 } 
 
+/* === Footer === */
 footer {
     background-color: #D03D56;
     padding: 20px 0;
