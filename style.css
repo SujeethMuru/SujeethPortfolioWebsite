@@ -118,7 +118,25 @@ h3{
 
 section{
     color:black;
+    margin: 20px;
 }
+
+#about-me {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+#about-list{
+    list-style-type: none;
+    text-indent: -10px;
+}
+  
+
+#about-list li{
+    margin-bottom: 20px;
+}
+  
 
 /* === Contact Section === */
 .contact {
