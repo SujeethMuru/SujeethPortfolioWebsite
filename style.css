@@ -121,6 +121,7 @@ section{
     margin: 20px;
 }
 
+/* === About me section === */
 #about-me {
     text-align: center;
     padding: 20px;
@@ -137,7 +138,41 @@ section{
     margin-bottom: 20px;
 }
   
-
+/* === Skills section === */
+.skills {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .skill-item {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #D03D56;
+    transition: transform 0.2s ease;
+  }
+  
+  .skill-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: black;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.1);
+    color: #3730a3;
+  }
+  
 /* === Contact Section === */
 .contact {
     background-color: #f9f9f9;
