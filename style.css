@@ -1,11 +1,15 @@
 /* === Header contatiner styling === */
 #header {
     position: relative;     /*Allows us to shift navbar using margins*/
-    left: 50%;              /*Move navbar halfway to the right*/
-    right: 50%;             /*offset from the right (for balance)*/
-    margin-left: -50vw;     /*Pull the navbar back to the left by half the viewport width*/
-    margin-right: -50vw;    /*Pull to right of half the viewport width*/
+    top: 0;
+    /*left: 50%;              Move navbar halfway to the right*/
+    /*right: 50%;             offset from the right (for balance)*/
+    /*margin-left: -50vw;     Pull the navbar back to the left by half the viewport width*/
+    /*margin-right: -50vw;    Pull to right of half the viewport width*/
     width: 100vw;
+    background-color: #D03D56;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /*Adds subtle shadow*/
+    z-index: 1000;
 }
 
   /* === Navigation Bar UL Styling === */
@@ -171,6 +175,25 @@ section{
 .contact a{
     color: red;
 } 
+
+/* === recaptcha === */
+.recaptcha-note {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.recaptcha-note a {
+    color: #888;
+    text-decoration: underline;
+    transition: color 0.3s;
+
+}
+
+.recaptcha-note a:hover {
+    color: #D03D56;
+}
 
 /* === Footer === */
 footer {
