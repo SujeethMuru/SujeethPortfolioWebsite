@@ -126,6 +126,7 @@ section{
     text-align: center;
     padding: 20px;
     background-color: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
   }
 
 #about-list{
@@ -138,21 +139,77 @@ section{
     margin-bottom: 20px;
 }
   
+/* === Experience section === */
+.experience {
+    padding: 40px 20px;
+    text-align: center;
+}
+  
+.experience-card {
+    background-color: #f7f7f7;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    text-align: left;
+}
+  
+.experience-header h3 {
+    color: #D03D56;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+  
+.exp-location {
+    font-style: italic;
+    color: #555;
+}
+  
+.exp-date {
+    font-size: 0.95rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+  
+.exp-highlights {
+    list-style: none;
+    padding: 0;
+}
+  
+.exp-highlights li {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.exp-highlights i {
+    color: #D03D56;
+}
+  
+.exp-note {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #3730a3;
+}
+  
 /* === Skills section === */
 .skills {
     text-align: center;
     padding: 40px 20px;
-  }
+}
   
-  .skills-grid {
+.skills-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
-  }
+}
   
-  .skill-item {
+.skill-item {
     width: 100px;
     display: flex;
     flex-direction: column;
@@ -160,24 +217,77 @@ section{
     font-size: 2.5rem;
     color: #D03D56;
     transition: transform 0.2s ease;
-  }
+}
   
-  .skill-item p {
+.skill-item p {
     margin-top: 10px;
     font-size: 1rem;
     color: black;
-  }
+}
+
+.skill-item i{
+    font-size: 2.8rem;
+    transition: transorm 0.2 ease;
+    color: #D03D56;
+}
   
-  .skill-item:hover {
+.skill-item:hover {
     transform: scale(1.1);
     color: #3730a3;
-  }
+}
+
+/* === Projects section === */
+.projects {
+    padding: 40px 20px;
+    text-align: center;
+}
+  
+.project-intro {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+  
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+  
+.project-card {
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease;
+    text-align: left;
+}
+  
+.project-card h3 {
+    color: #D03D56;
+    margin-bottom: 10px;
+}
+  
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+  
+.project-card p {
+    margin-bottom: 10px;
+    color: #333;
+}
+  
   
 /* === Contact Section === */
 .contact {
     background-color: #f9f9f9;
     padding: 60px 20px;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
 }
 
 .contact h2 {
