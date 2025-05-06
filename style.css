@@ -1,5 +1,5 @@
 /* === Header contatiner styling === */
-#header {
+header {
     position: relative;     /*Allows us to shift navbar using margins*/
     top: 0;
     /*left: 50%;              Move navbar halfway to the right*/
@@ -91,7 +91,8 @@ body{
 
 body{
     background: white;
-    /* background: #1a1a19; */
+    margin: 0;
+    overflow-x: hidden;
 }
 
 
@@ -359,7 +360,7 @@ section{
 }
 
 /* === Footer === */
-footer {
+/* footer {
     background-color: #D03D56;
     padding: 20px 0;
     text-align: center;
@@ -370,7 +371,16 @@ footer {
     margin-left: -50vw;
     margin-right: -50vw;
     width: 100vw;
-  }
+  } */
+
+  footer {
+    background-color: #D03D56;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+    overflow-x: hidden;
+  }  
 
   .footer-container {
     display: flex;
