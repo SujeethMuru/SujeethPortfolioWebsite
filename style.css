@@ -54,6 +54,12 @@ body{
     margin: 0px;
 }
 
+body{
+    background: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
 .main {
     margin-left: 20px;
     margin-right: 20px;
@@ -66,12 +72,15 @@ body{
 }
  
     /* Resume button */
-.resume-container {
+.resume-contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-top: 2rem; */
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
+
 .resume-button {
     padding: 0.75rem 1.5rem;
     background-color: #D03D56;
@@ -82,19 +91,33 @@ body{
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
-  }
+}
   
-  .resume-button:hover {
+.resume-button:hover {
     background-color: #3730a3;
     transform: scale(1.05);
-  }
-
-body{
-    background: white;
-    margin: 0;
-    overflow-x: hidden;
 }
 
+/* === Contact links next to resume button === */
+.contact-links {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-link a {
+    color: inherit;
+}
+
+.contact-links-icon {
+    font-size: 30px;
+    color: #D03D56 !important; /* Force correct color */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-links-icon:hover {
+    transform: scale(1.3);
+    color: #3730a3 !important; /* A nice blue color */
+}
 
 h1{
     margin: 20px;
@@ -360,6 +383,8 @@ section{
 }
 
 /* === Footer === */
+
+/* old footer */
 /* footer {
     background-color: #D03D56;
     padding: 20px 0;
