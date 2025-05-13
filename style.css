@@ -79,6 +79,33 @@ body{
   text-align: center;
 }
 
+/* === Screen Responsiveness === */
+@media only screen and (max-width: 768px) {
+
+    .profile-image {
+        width: 90%;
+    }
+
+    /* intro section */
+    .intro-section {
+        flex-direction: column;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    /* skills grid section */
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    .skill-item {
+        width: 80%;
+    }
+
+}
+
 /* Left-side image */
 .profile-image {
   width: 400px;
