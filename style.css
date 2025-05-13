@@ -83,21 +83,23 @@ body{
 @media only screen and (max-width: 768px) {
 
     .profile-image {
-        width: 90%;
+        width: 10%;
     }
 
     /* intro section */
-    .intro-section {
+
+    /* .intro-section {
         flex-direction: column;
     }
 
     .intro-text {
         text-align: center;
-    }
+    } */
 
     /* skills grid section */
     .skills-grid {
         flex-direction: column;
+        align-items: center;
     }
 
     .skill-item {
