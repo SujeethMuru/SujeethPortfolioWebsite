@@ -479,6 +479,47 @@ section{
   background-color: #000;
 }  
   
+/* Github contributions */
+.github {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.github-chart{
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.github-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.github-chart-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.github-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background-color: #D03D56;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #3730a3;
+}
+
 /* === Contact Section === */
 .contact {
     background-color: #f9f9f9;
