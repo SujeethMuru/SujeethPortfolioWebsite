@@ -23,6 +23,44 @@ header {
     display: flex;
     justify-content: center;    /*centers navlinks*/
 }
+/* === Dark Mode Toggle Button === */
+/* id="darkModeToggle" class="dark-toggle" title="Toggle Dark Mode" */
+.dark-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* === Dark Mode Styles === */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+}
+
+.dark-mode .project-card,
+.dark-mode .skill-item,
+.dark-mode .experience-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+}
+
+.dark-mode .resume-button,
+.dark-mode .project-button,
+.dark-mode .project-button.alt {
+    background-color: #f1f1f1;
+    color: #121212;
+}
 
 /* === Individual List Items === */
 .navbar li{

@@ -19,6 +19,7 @@
           <li><a href="#Projects">Projects</a></li>
           <li><a href="#Contact Me">Contact</a></li>
       </ul>
+      <button id="darkModeToggle" class="dark-toggle" title="Toggle Dark Mode">🌙</button>
     </nav>
   </header>
       
@@ -281,6 +282,28 @@
       duration: 1000,  // animation duration in ms
       once: true,     // only animate once when scrolling down
       // offset: 100     // distance from bottom of screen to trigger animation
+    });
+  </script>
+
+  <!-- Dark Mode -->
+  <script>
+    const toggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+
+    // Check saved preference
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+      body.classList.add('dark-mode');
+    }
+
+    toggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('dark-mode', 'enabled');
+        toggle.textContent = '☀️';
+      } else {
+        localStorage.setItem('dark-mode', 'disabled');
+        toggle.textContent = '🌙';
+      }
     });
   </script>
              
