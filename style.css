@@ -144,7 +144,7 @@ main {
 
 /* Left-side image */
 .profile-image {
-  width: 400px;
+  width: 300px;
   border-radius: 12px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
