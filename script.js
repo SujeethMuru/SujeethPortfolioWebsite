@@ -27,3 +27,25 @@ AOS.init({
   once: true,
   offset: 60,
 });
+
+const navLinks = [...document.querySelectorAll(".navbar a")];
+const observedSections = navLinks
+  .map((link) => document.querySelector(link.getAttribute("href")))
+  .filter(Boolean);
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  const visible = entries
+    .filter((entry) => entry.isIntersecting)
+    .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+  if (!visible) return;
+
+  navLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${visible.target.id}`;
+    link.classList.toggle("active", isActive);
+    if (isActive) link.setAttribute("aria-current", "location");
+    else link.removeAttribute("aria-current");
+  });
+}, { rootMargin: "-25% 0px -60%", threshold: [0, 0.25, 0.5] });
+
+observedSections.forEach((section) => sectionObserver.observe(section));

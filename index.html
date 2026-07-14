@@ -15,12 +15,12 @@
   <header>
     <nav class="navbar" aria-label="Primary navigation">
       <ul>
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about-me"><i class="fas fa-user" aria-hidden="true"></i><span>About</span></a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase" aria-hidden="true"></i><span>Experience</span></a></li>
+          <li><a href="#skills"><i class="fas fa-code" aria-hidden="true"></i><span>Skills</span></a></li>
+          <li><a href="#certifications"><i class="fas fa-award" aria-hidden="true"></i><span>Certifications</span></a></li>
+          <li><a href="#projects"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Projects</span></a></li>
+          <li><a href="#contact"><i class="fas fa-paper-plane" aria-hidden="true"></i><span>Contact</span></a></li>
       </ul>
     </nav>
     <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
@@ -41,7 +41,14 @@
         <h1> I am a Computer Science student</h1>
         <h3> Interested in exploring and innovating in software</h3>
         <div class="resume-contact-container">
-          <a class="resume-button" href="resume/SujeethComputerScienceResumewebpage.pdf" target="_blank" rel="noopener noreferrer">View My Resume</a>
+          <div class="resume-actions" aria-label="Resume options">
+            <a class="resume-button" href="./resume/SujeethComputerScienceResumewebpage.pdf" target="_blank" rel="noopener noreferrer" type="application/pdf">
+              <i class="fas fa-file-pdf" aria-hidden="true"></i> Open Resume
+            </a>
+            <a class="resume-download" href="./resume/SujeethComputerScienceResumewebpage.pdf" download="Sujeeth-Muruganandam-Resume.pdf" type="application/pdf" aria-label="Download Sujeeth Muruganandam's resume as a PDF">
+              <i class="fas fa-download" aria-hidden="true"></i> Download
+            </a>
+          </div>
           <div class="contact-links">
             <a href="https://www.linkedin.com/in/sujeeth-muruganandam-a16033318" target="_blank" rel="noopener noreferrer" class="footer-icon" aria-label="LinkedIn profile">
               <i class="fab fa-linkedin contact-links-icon"></i>
@@ -100,7 +107,7 @@
           <li><i class="fas fa-tools"></i> Assisted in software updates, network maintenance, and new hardware rollouts.</li>
         </ul>
     
-        <p class="exp-note">🚀 Open to internships and part-time opportunities in software and IT!</p>
+        <p class="exp-note"><i class="fas fa-circle-check" aria-hidden="true"></i> Open to internships and part-time opportunities in software and IT.</p>
       </div>
     </section>
 
@@ -200,7 +207,7 @@
 
         <!-- Project 1 -->
         <div class="project-card" data-aos="flip-left">
-          <h3>📄 AI Resume Coach Agent</h3>
+          <h3><i class="fas fa-file-lines" aria-hidden="true"></i> AI Resume Coach Agent</h3>
           <p>An AI-powered assistant that analyzes resumes and provides personalized feedback using <strong>LangChain</strong> and <strong>local LLMs (Ollama)</strong>. Designed for fast, private, offline usage with structured prompts and intelligent analysis.</p>
           <p><strong>Tech Used:</strong> Python, LangChain, Ollama, LLMs</p>
           <div class="project-buttons">
@@ -211,7 +218,7 @@
  
         <!-- Project 2 -->
         <div class="project-card">
-          <h3>📦 Smart Inventory Replenishment System</h3>
+          <h3><i class="fas fa-boxes-stacked" aria-hidden="true"></i> Smart Inventory Replenishment System</h3>
           <p>Designed and built a smart inventory management system using <strong>Python</strong>, <strong>Flask</strong>, and <strong>SQLite</strong>, featuring low-stock detection, product search, and CRUD functionality. Powered by core <strong>data structures and algorithms</strong> to simulate real-world warehouse logic.</p>
           <p><strong>Tech used:</strong>Python, Flask, SQLite</p>
           <div class="project-buttons">
@@ -223,7 +230,7 @@
 
         <!-- Project 3 -->
         <div class="project-card">
-          <h3>🔨 Bonk Buddies</h3>
+          <h3><i class="fas fa-gamepad" aria-hidden="true"></i> Bonk Buddies</h3>
 
           <p>
             A fast-paced pixel-art arcade game inspired by whack-a-mole.
@@ -259,7 +266,7 @@
 
         <!-- Project 4 -->
         <div class="project-card">
-          <h3>🧠 Tic Tac Toe AI</h3>
+          <h3><i class="fas fa-chess" aria-hidden="true"></i> Tic Tac Toe AI</h3>
           <p>A smart twist on the classic game with 3 AI levels (Easy, Normal, Hard), animations, and two play modes.</p>
           <p><strong>Tech Used:</strong> Python, Pygame</p>
         </div>
@@ -267,14 +274,14 @@
       
         <!-- Project 5 -->
         <div class="project-card">
-          <h3>🧮 C++ Calculator with Extra Features</h3>
+          <h3><i class="fas fa-calculator" aria-hidden="true"></i> C++ Calculator with Extra Features</h3>
           <p>Basic calculator expanded with square root, mod, exponent, and a clean CLI interface using OOP.</p>
           <p><strong>Tech Used:</strong> C++</p>
         </div>
 
         <!-- Project 6 -->
         <div class="project-card">
-          <h3>🔢 Asynchronous Up Counter</h3>
+          <h3><i class="fas fa-microchip" aria-hidden="true"></i> Asynchronous Up Counter</h3>
           <p>Designed and simulated a digital counter circuit in Multisim that counts up to my student ID using D flip-flops and resets automatically. Focused on logic design, simulation, and circuit timing.</p>
           <p><strong>Tech Used:</strong> Multisim, Digital Logic, D Flip-Flops</p>
         </div>
@@ -284,7 +291,7 @@
 
 
     <section class="github" id="GitHub" data-aos="fade-up">
-      <h2>📈 Github Contributions</h2>
+      <h2><i class="fab fa-github" aria-hidden="true"></i> GitHub Contributions</h2>
       <p>Here's a glimpse of my recent GitHub activity:</p>
       <div class="github-content">
         <div class="github-chart-wrapper">
