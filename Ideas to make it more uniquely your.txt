@@ -1,0 +1,33 @@
+  Ideas to make it more uniquely yours:
+
+  1. Lead with a sharper identity
+     Replace “I am a Computer Science student” with something more distinctive, such as:
+     “Computer Science student building practical software, intelligent tools, and reliable IT solutions.”
+
+  2. Turn projects into short case studies
+     Feature your strongest three projects with:
+      - The problem you identified
+      - Your technical approach
+      - One difficult decision or challenge
+      - A measurable result
+      - Screenshots or short demos
+
+  3. Create an “Engineering Playground” section
+     This could showcase smaller experiments involving local LLMs, cybersecurity labs, automation scripts, digital
+     logic, or game development. That range is unusual and reflects your curiosity.
+
+  4. Add an interactive project filter
+     Let visitors filter projects by AI, Web, Cybersecurity, Games, and Hardware. This would make your varied experience
+     feel intentional rather than disconnected.
+
+  5. Show your current focus
+     Add a compact “Currently” panel containing what you are learning, building, and looking for. For example: local AI
+     agents, cybersecurity certifications, and software internships.
+
+  6. Strengthen the experience section
+     Add metrics and outcomes from your IT role, especially reliability improvements, number of systems supported,
+     common problems solved, and technologies used.
+
+  7. Use a personal visual motif
+     A subtle terminal-inspired accent, circuit pattern, or “system status” component could connect your software,
+     cybersecurity, IT, and digital-logic interests without making the site feel gimmicky.
