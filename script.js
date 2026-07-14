@@ -49,3 +49,36 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: "-25% 0px -60%", threshold: [0, 0.25, 0.5] });
 
 observedSections.forEach((section) => sectionObserver.observe(section));
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navbar = document.querySelector(".navbar");
+
+function closeMenu() {
+  navbar.classList.remove("open");
+  menuToggle.setAttribute("aria-expanded", "false");
+  menuToggle.setAttribute("aria-label", "Open navigation menu");
+}
+
+menuToggle.addEventListener("click", () => {
+  const willOpen = !navbar.classList.contains("open");
+  navbar.classList.toggle("open", willOpen);
+  menuToggle.setAttribute("aria-expanded", String(willOpen));
+  menuToggle.setAttribute("aria-label", willOpen ? "Close navigation menu" : "Open navigation menu");
+});
+
+navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeMenu();
+    menuToggle.focus();
+  }
+});
+
+document.addEventListener("click", (event) => {
+  if (!event.target.closest("header")) closeMenu();
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 900) closeMenu();
+});
